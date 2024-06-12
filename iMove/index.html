@@ -46,6 +46,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     
+  <!--ParticleJs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/1.0.0/particles.min.js" integrity="sha512-zSXd15DNZUoXEVLbyfTa1XQFk33vi7CcJzPHdBh/7Y3NEEec+l/eBhg2RGgRutwQVfrt9EnBmrYzn6d3NxGG1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   </head>
 <body>
     <!--NavBar-->
@@ -69,8 +72,8 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#about-me">About Me</a></li>
-                  <li><a class="dropdown-item" href="#tec">Tecnologias</a></li>
                   <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                  <li><a class="dropdown-item" href="#tec">Tecnologias</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#contatos">Contacts</a></li>
                 </ul>
@@ -78,7 +81,7 @@
             </ul>
           </div>
         </div>
-        <div id="clock" style="color: aqua;">hdawgvauyw</div>
+        <div id="clock" style="color: aqua;"></div>
       </nav>
     </header>
 
@@ -104,60 +107,77 @@
 
             <a id="back-button" class="dropdown-item" href="#navBar">Voltar</a>
           </div>
+          <div id="particles-js"></div>
           <img id="picture" src="img/project-1.jpg" alt="foto pessoal">
         </div>
       </section>
 
-      <!--Tecnologias-->
-
-      <div class="tecnologias" id="tec">
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img id="imageProject" src="img/project-1.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p id="text-slide">Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img id="imageProject" src="img/project-2.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p id="text-slide">Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img id="imageProject" src="img/project-3.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p id="text-slide ">Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-
-      <!--Projects-->
-
-      <div data-aos="fade-down" class="geral" id="projects">
-        <img id="picture" src="img/project-3.jpg" alt="">
-        <a class="dropdown-item" href="#navBar">Voltar</a>
-      </div>
       
+      <!--Tecnologias-->
+      
+      <div class="tecnologias" id="tec">
+        <section class="lineCard-right">
+          <div data-aos="fade-right" id="cardTec">
+            <img src="img/1 vue.jpg" alt="Card Vue.js" id="cardTec-Image">
+          </div>
+        </section>
+        <section class="lineCard-left">
+          <div data-aos="fade-left" id="cardTec">
+            <img src="img/1 vue.jpg" alt="Card Vue.js" id="cardTec-Image">
+          </div>
+        </section>
+        <section class="lineCard-right">
+          <div data-aos="fade-right" id="cardTec">
+            <img src="img/1 vue.jpg" alt="Card Vue.js" id="cardTec-Image">
+          </div>
+        </section>
+  
+        <a id="back-button" class="dropdown-item" href="#navBar">Voltar</a>
+      </div>
+
+      <!--Projetcts-->
+  
+      <div class="projects">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img id="imageProject" src="img/project-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p id="text-slide">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img id="imageProject" src="img/project-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p id="text-slide">Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img id="imageProject" src="img/project-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p id="text-slide ">Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+        
       <!--Contacs-->
 
       <footer class="rodape" id="contatos">
@@ -179,10 +199,130 @@
       </footer>
     </div>
 
+    
+
+    <!--AOSJs-->
     <script>
       AOS.init();
     </script>
+
     <!--Script-->
     <script src="script/script.js"></script>
-</body>
+
+    <!--ParticleJS-->
+    <script src="script/particles.min.js"></script>
+    <script>
+      particlesJS(
+            {
+  "particles": {
+    "number": {
+      "value": 210,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#e3c6c6"
+    },
+    "shape": {
+      "type": "polygon",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 4
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+      )
+    </script>
 </html>
