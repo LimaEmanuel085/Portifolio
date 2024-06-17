@@ -8,10 +8,26 @@ body,html{
     overflow-x: hidden;
 }
 
+.navbar.bg-body-tertiary{
+    display: none;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+#menu a {
+    display: block;
+    padding: 0.5rem;
+}
+
 .navbar.navbar-expand-lg.bg-body-tertiary{
-    background-color: #1b1a1a9a;
+    background-color: hsla(0, 2%, 10%, 0.604);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    display: flex;
 }
 
 .nav-link.active{
@@ -46,6 +62,14 @@ body,html{
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+}
+
+#easter-egg{
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: aliceblue;
 }
 
 .text-p{
@@ -291,4 +315,68 @@ i{
     height: 100%;
     top: 0;
     z-index: -1;
+}
+
+@media (max-width: 600px) {
+    .conteiner-about {
+        flex-direction: column;
+    }
+    .text{
+        color: aliceblue;
+        background-color: rgba(0, 0, 0, 0.575);
+        padding: 15px;
+        width: 380px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text-p{
+        width: 400px;
+    }
+    .tecnologias{
+        margin-top: 10px;
+        width: 400px;
+        height: 200vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        /*border-radius: 42px;*/
+    }
+    .text-tec{
+        color: aliceblue;
+        background-color: rgba(0, 0, 0, 0.575);
+        border-radius: 42px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        width: 300px;
+    }
+    #cardTec-left{
+        text-align: left;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #cardTec-right{
+        text-align: left;
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    #navBar{
+        display: none;
+    }
+    .navbar.bg-body-tertiary{
+        display: flex;
+    }
+    .final{
+        font-size: 12px;
+    }
+    
 }
