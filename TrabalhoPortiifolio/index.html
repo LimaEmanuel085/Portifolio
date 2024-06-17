@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emanuel Lima | Web-Developer</title>
-    <link rel="shortcut icon" href="img/favIcon/favicon.ico" type="image/x-icon">
+    <title>iMovi</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts Lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,19 +61,40 @@
 
     <!--NavBar-->
     <header>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="doc/Currículo-Emanuel_Lima.pdf" target="_blank" download>
+            <img src="img/PictureMe.png" alt="PictureMe" width="60px">
+            </a>
+          <a class="navbar-brand" style="user-select: none; cursor: pointer;" href="doc/Currículo-Emanuel_Lima.pdf" target="_blank" download>Emanuel Lima</a>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#about-me">About Me</a></li>
+              <li><a class="dropdown-item" href="#tec">Tecnologias</a></li>
+              <li><a class="dropdown-item" href="#IdProjects">Projects</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
       <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="doc/Currículo-Emanuel_Lima.pdf" target="_blank" download>
-          <img src="img/PictureMe.png" alt="Bootstrap" width="60px">
+          <img src="img/PictureMe.png" alt="PictureMe" width="60px">
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="doc/Currículo-Emanuel_Lima.pdf" target="_blank" download>Emanuel Lima</a>
+                <a class="nav-link active" aria-current="page" href="doc/Currículo-Emanuel_Lima.pdf" target="_blank" download style="user-select: none; cursor: pointer;" >Emanuel Lima</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Áreas
+                  Menu
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#about-me">About Me</a></li>
@@ -101,7 +122,7 @@
               Emanuel Lima
             </h1>
             <section class="text-p">
-              Olá, sou Emanuel, um programador full stack com uma paixão pela codificação desde os meus 12 anos. Com uma sólida experiência desde 2022, estou comprometido em criar soluções completas que proporcionem uma excelente experiência de usuário.
+              Olá, sou Emanuel, um <button id="easter-egg" onclick="buttonClick()">programador</button> full stack com uma paixão pela codificação desde os meus 12 anos. Com uma sólida experiência desde 2022, estou comprometido em criar soluções completas que proporcionem uma excelente experiência de usuário.
 
               Minha especialidade está na criação de aplicações responsivas, garantindo que funcionem perfeitamente em uma variedade de dispositivos e tamanhos de tela. Além disso, priorizo as melhores práticas de desenvolvimento para garantir a qualidade e estabilidade das minhas criações.
 
@@ -112,6 +133,7 @@
 
             <a id="back-button" class="dropdown-item" href="#navBar">Voltar</a>
           </div>
+          
           <img id="picture" class="img-fluid" src="img/PictureMe.png" alt="foto pessoal">
         </div>
       </section>
@@ -252,7 +274,6 @@
 
 
     <!--ParticleJS-->
-
     <div id="particles-js"></div>
     <script src="script/particles.min.js"></script>
     <script>
