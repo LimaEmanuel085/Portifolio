@@ -10,3 +10,9 @@ function updateClock () {
 
 updateClock()
 setInterval(updateClock, 1000)
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function buttonClick() {
+    alert('Parabéns! Você achou o easter egg')
+}
