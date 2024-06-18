@@ -8,6 +8,10 @@ body,html{
     overflow-x: hidden;
 }
 
+p{
+   text-align: justify;
+}
+
 .navbar.bg-body-tertiary{
     display: none;
 }
